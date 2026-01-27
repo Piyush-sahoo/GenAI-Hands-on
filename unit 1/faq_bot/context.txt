@@ -1,0 +1,28 @@
+Company FAQ Policy (Updated)
+
+Overview
+This FAQ covers account access, refunds, privacy, and support for the service.
+
+1) Password Reset
+- Use the “Forgot Password” link on the login page to receive a reset email.
+- Reset links expire after 15 minutes.
+- If the email doesn’t arrive within 5 minutes, check Spam/Junk or request a new link.
+
+2) Account Deletion
+- Go to Settings > Account > Delete Account.
+- Deletions are processed within 7 business days.
+- Once deleted, data cannot be recovered.
+
+3) Refunds
+- Monthly plans are refundable within 14 days of purchase.
+- Annual plans are refundable within 30 days of purchase.
+- Refunds are issued to the original payment method within 5–10 business days.
+
+4) Data Privacy
+- We store only the data needed to deliver the service.
+- We never sell personal data to third parties.
+- You can request a copy of your data from Settings > Privacy.
+
+5) Support Hours
+- Support is available Monday–Friday, 9am–6pm IST.
+- Typical response time is within 24 business hours.
