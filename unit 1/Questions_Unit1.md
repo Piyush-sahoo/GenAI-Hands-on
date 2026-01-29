@@ -38,17 +38,17 @@
 
 Copy this markdown table into your notebook and fill it out based on your experiments.
 
-| Task | Model | Classification (Success/Failure) | Observation (What actually happened?) | Why did this happen? (Architectural Reason) |
-| :--- | :--- | :--- | :--- | :--- |
-| **Generation** | BERT | *Failure* | *Example: Generated nonsense or random symbols.* | *BERT is an Encoder; it isn't trained to predict the next word.* |
-| | RoBERTa | | | |
-| | BART | | | |
-| **Fill-Mask** | BERT | *Success* | *Predicted 'create', 'generate'.* | *BERT is trained on Masked Language Modeling (MLM).* |
-| | RoBERTa | | | |
-| | BART | | | |
-| **QA** | BERT | | | |
-| | RoBERTa | | | |
-| | BART | | | |
+| Task           | Model   | Classification (Success/Failure) | Observation (What actually happened?)                      | Why did this happen? (Architectural Reason)                                     |
+| -------------- | ------- | -------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| **Generation** | BERT    | Failure                          | Generated incoherent or repetitive output; warnings shown. | Encoder-only, bidirectional attention; not trained for next-token generation.   |
+|                | RoBERTa | Failure                          | Returned prompt unchanged or minimal text.                 | Same encoder-only architecture as BERT; no decoder or causal masking.           |
+|                | BART    | Partial Success                  | Generated text but quality was generic or inconsistent.    | Encoder-decoder model, but trained for denoising, not causal language modeling. |
+| **Fill-Mask**  | BERT    | Success                          | Correctly predicted words like “create”, “generate”.       | Trained directly on Masked Language Modeling (MLM).                             |
+|                | RoBERTa | Success                          | Accurate predictions with balanced confidence.             | Optimized MLM training with dynamic masking and more data.                      |
+|                | BART    | Moderate Success                 | Predicted valid words but with lower confidence.           | Trained for text reconstruction, not single-token masking.                      |
+| **QA**         | BERT    | Failure                          | Extracted random or partial answers with low confidence.   | QA architecture exists, but base model lacks QA fine-tuning.                    |
+|                | RoBERTa | Failure                          | Similar poor and inconsistent answers.                     | Better pre-training cannot replace task-specific QA fine-tuning.                |
+|                | BART    | Failure                          | QA pipeline failed or returned irrelevant output.          | Encoder-decoder model suited for generation, not extractive QA.                 |
 
 ---
 
