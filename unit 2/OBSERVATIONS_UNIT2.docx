@@ -1,0 +1,62 @@
+# Unit 2 Observations
+
+
+- `1_LangChain_Foundation.ipynb`  – Introduction to LangChain and basic LLM application setup.
+- `2_Prompt_Engineering.ipynb`    – Techniques for crafting effective prompts, role prompting, and few-shot layouts.
+- `3_Advanced_Prompting.ipynb`     – Chain/Tree/Graph of Thoughts reasoning patterns and Groq API usage.
+- `4_RAG_and_Vector_Stores.ipynb`  – Embeddings, FAISS vector stores, RAG pipeline, and indexing algorithms.
+- `Assignment_MOE.md`              – Detailed specification of the Mixture‑of‑Experts assignment (router & experts with Groq API).
+- `README.md`                     – High‑level overview of unit contents and setup instructions.
+
+---
+
+# Notebooks Summary
+
+### 1. LangChain Foundation
+- Installed required libraries (`langchain`, `python-dotenv`, etc.).
+- Demonstrated secure API key handling with `.env`.
+- Explained model temperature and prompt/response parsers.
+- Built basic chains using LCEL and prompt templates.
+
+### 2. Prompt Engineering
+- Showcased system/user/assistant message roles.
+- Illustrated few-shot prompting with examples.
+- Built reusable prompt templates with partial formatting.
+- Emphasised importance of explicit instructions for reliability.
+
+### 3. Advanced Prompting
+- Implemented reasoning strategies:
+  - **Chain of Thought**: linear step-by-step reasoning.
+  - **Tree of Thoughts**: branching exploration with evaluation.
+  - **Graph of Thoughts**: networked reasoning with aggregation.
+- Used the Groq (Llama 3) API for fast logical operations.
+- Compared performance of different reasoning frameworks.
+
+### 4. RAG & Vector Stores
+- Explained embeddings and vector space representation (MiniLM model).
+- Visualised vector dimensionality and computed cosine similarities.
+- Set up FAISS vector store, created a simple retrieval index.
+- Constructed a naive RAG pipeline with LangChain retriever and Gemini LLM.
+- Performed deep dive into FAISS indexing approaches: Flat, IVF, HNSW, PQ.
+
+---
+
+##  Assignment: Mixture of Experts (MoE)
+- The specification asks for building a **Smart Router** using a Groq‑powered LLM.
+- Requirements include defining multiple expert prompts (technical, billing, general).
+- Implement a `route_prompt` function to classify user queries into categories.
+- Orchestrate the routed query by selecting the appropriate expert and invoking the model.
+- Bonus challenge: add a tool‑use expert for external data retrieval.
+
+---
+
+## Key Outcomes & Learning Points
+
+- Gained practical experience with the LangChain framework and LCEL.
+- Understood prompt engineering best practices including few-shot and role‑based prompts.
+- Explored advanced reasoning patterns for complex problem solving.
+- Built a simple RAG system and learned how vector databases scale.
+- Completed a project specification for a MoE router demonstrating architectural thinking.
+
+---
+
