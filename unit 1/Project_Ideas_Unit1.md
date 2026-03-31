@@ -23,7 +23,7 @@ This document outlines 60 project ideas that can be built using the fundamental 
     *   **Goal**: Input a niche (e.g., "Tech Review") and generate 5 catchy video titles.
     *   **Tech**: `gpt2` prompted with "List of viral video titles:".
 
----
+--- 
 
 ## ⚡ Category 2: Summarization (The "Productivity" Agents)
 *Tech used: `pipeline('summarization')`, `distilbart-cnn-12-6`, `bart-large-cnn`*
