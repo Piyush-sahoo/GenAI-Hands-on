@@ -1,0 +1,19 @@
+Daily Horoscope Generator – Project Overview
+
+Goal
+The project aims to automatically generate vague but convincing daily horoscopes for any zodiac sign. By leveraging a language model (GPT-2 or DistilGPT-2), the system produces mystical, uplifting, and personalized fortunes that mimic the style of traditional astrology readings.
+
+Technology Stack:
+1.Python – Core programming language
+
+2.Hugging Face Transformers – Provides access to pretrained models like GPT-2 and DistilGPT-2
+
+3.GPT-2 – Text generation models used to produce horoscope content
+
+4.Google Colab – Execution environment for easy setup and experimentation
+  
+How It Works:
+1.Input: User provides a zodiac sign (e.g., Taurus).
+2.Prompt Engineering: A carefully crafted text prompt guides the model to generate horoscope-style content.
+3.Text Generation: GPT-2 generates a continuation of the prompt, producing a horoscope.
+4.Output: A short, poetic horoscope that includes themes of emotions, opportunities, and subtle warnings.
